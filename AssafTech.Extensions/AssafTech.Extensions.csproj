@@ -4,13 +4,49 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>AssafTech.Extensions</Title>
+    <Version>1.0.0</Version>
+    <Authors>Mohammad Said Assaf</Authors>
+    <Company>AssafTech</Company>
+    <Product>AssafTech</Product>
+    <Description>AssafTech Extensions contain all common extensions used on API project</Description>
+    <PackageIcon>AssafTech_logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mhmdassaf/AssafTech.Extensions</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>AssafTech, Extensions, Models, Builders</PackageTags>
+    <PackageReleaseNotes>Include some usefull extensions for API projects</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\AssafTech_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AssafTech.Common" Version="1.0.7" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AssafTech_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
