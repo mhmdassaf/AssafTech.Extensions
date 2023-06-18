@@ -2,6 +2,7 @@
 global using AssafTech.Common.Constants;
 global using AssafTech.Common.Identity.Constants;
 global using AssafTech.Common.Models;
+global using AssafTech.Extensions.Models;
 
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.AspNetCore.Authorization;

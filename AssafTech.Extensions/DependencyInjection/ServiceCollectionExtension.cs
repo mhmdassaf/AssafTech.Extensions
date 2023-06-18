@@ -1,6 +1,4 @@
-﻿using AssafTech.Extensions.Models;
-
-namespace AssafTech.Extensions.DependencyInjection;
+﻿namespace AssafTech.Extensions.DependencyInjection;
 
 public static class ServiceCollectionExtension
 {
