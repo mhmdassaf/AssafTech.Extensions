@@ -45,8 +45,6 @@ public static class ApplicationBuilderExtension
                         break;
                 }
 
-                _logger.Error(exception, exception?.Message);
-
                 context.Response.ContentType = "application/json";
                 context.Response.StatusCode = (int)responseModel.HttpStatusCode;
                 await context.Response.WriteAsync(JsonConvert.SerializeObject(responseModel));
