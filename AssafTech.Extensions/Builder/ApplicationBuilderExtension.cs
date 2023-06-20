@@ -16,7 +16,7 @@ public static class ApplicationBuilderExtension
         return builder;
     }
 
-    public static WebApplication UseGlobalExceptionHandler(this WebApplication app, Logger _logger)
+    public static WebApplication UseGlobalExceptionHandler(this WebApplication app)
     {
         app.UseExceptionHandler(errorApp =>
         {

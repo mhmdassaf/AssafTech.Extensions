@@ -1,4 +1,6 @@
-﻿namespace AssafTech.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+
+namespace AssafTech.Extensions.DependencyInjection;
 
 public static class ServiceCollectionExtension
 {
@@ -62,6 +64,16 @@ public static class ServiceCollectionExtension
 
         return services;
     }
+    public static IServiceCollection AddDatabase<TContext>(this IServiceCollection services, ConfigurationManager configuration)
+        where TContext : DbContext
+    {
+		services.AddDbContext<TContext>(config =>
+		{
+			config.UseNpgsql(configuration.GetConnectionString(nameof(ConnectionStrings.AssafTechConnection)));
+		});
+
+        return services;
+	}
 }
 
 public class AuthorizeCheckOperationFilter : IOperationFilter

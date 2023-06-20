@@ -15,6 +15,7 @@ global using Microsoft.OpenApi.Extensions;
 global using Microsoft.OpenApi.Models;
 global using Microsoft.AspNetCore.Diagnostics;
 global using Microsoft.AspNetCore.Http;
+global using Microsoft.EntityFrameworkCore;
 
 global using NLog;
 global using NLog.Web;

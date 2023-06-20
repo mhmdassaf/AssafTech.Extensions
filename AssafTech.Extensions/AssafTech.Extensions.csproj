@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>AssafTech.Extensions</Title>
-    <Version>7.0.0</Version>
+    <Version>7.0.1</Version>
     <Authors>Mohammad Said Assaf</Authors>
     <Company>AssafTech</Company>
     <Product>AssafTech</Product>
@@ -36,8 +36,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AssafTech.Common" Version="1.0.7" />
+    <PackageReference Include="AssafTech.Common" Version="7.0.0" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.0" />
   </ItemGroup>
